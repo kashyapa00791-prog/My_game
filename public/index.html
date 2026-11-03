@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#101827"><title>Sansad Arena 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header><div class="brand">SANSAD <b>ARENA 3D</b></div><div id="connection">OFFLINE</div></header>
+  <main id="menu" class="panel">
+    <p class="eyebrow">A STYLIZED ARENA SHOWDOWN</p><h1>Choose your<br><span>battle mode</span></h1>
+    <p class="muted">Original characters · 3D arena · Friendly competition</p>
+    <div class="menu-grid">
+      <button id="cpuBtn" class="primary">Play vs CPU</button>
+      <button id="hostBtn">Create online room</button>
+      <div class="join-row"><input id="roomCode" maxlength="6" placeholder="ROOM CODE"><button id="joinBtn">Join</button></div>
+    </div>
+    <div class="help">Move: WASD / touch pad · Strike: J · Guard: K · Dash: L</div>
+    <div id="roomInfo" class="muted"></div>
+  </main>
+  <section id="hud" class="hidden">
+    <div class="bars">
+      <div class="fighter"><b id="pName">PLAYER</b><div class="bar"><i id="pHealth"></i></div></div>
+      <div class="round">ROUND 1</div>
+      <div class="fighter right"><b id="eName">CPU</b><div class="bar"><i id="eHealth"></i></div></div>
+    </div>
+    <div id="message">READY</div>
+    <button id="backBtn" class="back">MENU</button>
+    <div class="touch">
+      <div class="pad">
+        <button data-key="w">▲</button><div><button data-key="a">◀</button><button data-key="s">▼</button><button data-key="d">▶</button></div>
+      </div>
+      <div class="actions"><button data-act="guard">GUARD</button><button data-act="strike" class="hit">STRIKE</button><button data-act="dash">DASH</button></div>
+    </div>
+  </section>
+  <div id="tip">Rotate your phone to landscape for the best experience.</div>
+</div>
+<script type="module" src="game.js"></script>
+</body></html>
