@@ -1,0 +1,8 @@
+{
+  "name": "sansad-arena-3d",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original stylized 3D arena fighter with CPU and online rooms",
+  "scripts": {"start": "node server/server.js"},
+  "dependencies": {"express": "^4.21.2", "ws": "^8.18.0"}
+}
